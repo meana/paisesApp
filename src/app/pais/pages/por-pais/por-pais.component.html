@@ -3,7 +3,10 @@
 
 <div class="row">
     <div class="col">
-        <app-pain-input (onEnter)="buscar($event)"></app-pain-input>
+        <app-pain-input 
+            (onEnter)="buscar($event)"
+            (onDebounce)="sugerencia($event)">
+        </app-pain-input>
     </div>
 </div>
 
